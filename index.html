@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost in Tra(i)nslation - Projectdocumentatie</title>
+
+    <!-- DIT LAADT TAILWIND – heel belangrijk -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-rose-50 via-amber-50 to-indigo-50 text-slate-900 antialiased">
+    <div class="min-h-screen flex flex-col">
+
+        <!-- TOPBAR -->
+        <header class="py-6">
+            <div class="max-w-6xl mx-auto px-6 flex items-center justify-between">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-pink-500 to-violet-500 flex items-center justify-center text-white font-semibold">LT</div>
+                    <span class="font-extrabold text-xl text-slate-800">Lost in Tra(i)nslation</span>
+                </a>
+                <nav class="hidden md:flex items-center gap-4">
+                    <a href="resources.html" class="inline-flex items-center gap-2 bg-gradient-to-br from-yellow-400 to-pink-500 text-white px-3 py-2 rounded-lg shadow-md animate-pulse">Procesverhaal</a>
+                    <a href="#weeks" class="inline-flex items-center gap-2 bg-white/90 text-slate-800 px-4 py-2 rounded-lg shadow-sm">Browse Weeks</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- NAV is intentionally removed to simplify the top of the site. -->
+
+        <!-- MAIN -->
+        <main class="flex-1">
+            <div class="max-w-6xl mx-auto px-6 py-12">
+                <!-- Hero -->
+                <section class="bg-gradient-to-br from-pink-500 via-amber-400 to-violet-600 text-white rounded-3xl shadow-2xl p-10 md:p-16">
+                    <div class="max-w-4xl">
+                        <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">Project Documentation — <span class="inline-block bg-white/10 px-2 rounded">Lost in Tra(i)nslation</span></h2>
+                        <p class="mt-4 text-white/90 leading-relaxed text-lg">A colourful, week-by-week account of research, design and prototyping. Click a week to open detailed notes, prototypes and deliverables.</p>
+                        <div class="mt-8 flex flex-wrap gap-3">
+                            <a href="#weeks" class="inline-flex items-center gap-2 bg-white text-violet-600 px-5 py-3 rounded-lg shadow hover:shadow-xl transform hover:-translate-y-1">Browse Weeks</a>
+                            <a href="resources.html" class="inline-flex items-center gap-2 bg-gradient-to-br from-yellow-400 to-pink-500 text-white px-5 py-3 rounded-lg shadow-2xl transform hover:scale-105 animate-pulse">Procesverhaal</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Weeks grid -->
+                <section id="weeks" class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Card template -->
+                    <a href="week1.html" aria-label="Open Week 1" class="group block rounded-2xl p-6 transform transition hover:-translate-y-2 hover:scale-105 text-white shadow-2xl bg-gradient-to-br from-rose-400 to-orange-400">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center text-white text-xl">🔎</div>
+                            <div>
+                                <h3 class="text-xl font-bold">Week 1</h3>
+                                <p class="text-sm text-white/90 mt-1">Process and initial research.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="week2.html" aria-label="Open Week 2" class="group block rounded-2xl p-6 transform transition hover:-translate-y-2 hover:scale-105 text-white shadow-2xl bg-gradient-to-br from-emerald-400 to-teal-400">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center text-white text-xl">🎨</div>
+                            <div>
+                                <h3 class="text-xl font-bold">Week 2</h3>
+                                <p class="text-sm text-white/90 mt-1">Design explorations and Figma resources.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="week3.html" aria-label="Open Week 3" class="group block rounded-2xl p-6 transform transition hover:-translate-y-2 hover:scale-105 text-white shadow-2xl bg-gradient-to-br from-indigo-500 to-violet-500">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center text-white text-xl">🧠</div>
+                            <div>
+                                <h3 class="text-xl font-bold">Week 3</h3>
+                                <p class="text-sm text-white/90 mt-1">Research notes and outputs.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="week4.html" aria-label="Open Week 4" class="group block rounded-2xl p-6 transform transition hover:-translate-y-2 hover:scale-105 text-white shadow-2xl bg-gradient-to-br from-yellow-400 to-amber-500">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center text-white text-xl">⚙️</div>
+                            <div>
+                                <h3 class="text-xl font-bold">Week 4</h3>
+                                <p class="text-sm text-white/90 mt-1">Prototyping and iterations.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="week5.html" aria-label="Open Week 5" class="group block rounded-2xl p-6 transform transition hover:-translate-y-2 hover:scale-105 text-white shadow-2xl bg-gradient-to-br from-pink-400 to-rose-500">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center text-white text-xl">🧪</div>
+                            <div>
+                                <h3 class="text-xl font-bold">Week 5</h3>
+                                <p class="text-sm text-white/90 mt-1">User testing and feedback.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="week6.html" aria-label="Open Week 6" class="group block rounded-2xl p-6 transform transition hover:-translate-y-2 hover:scale-105 text-white shadow-2xl bg-gradient-to-br from-sky-400 to-indigo-400">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center text-white text-xl">🔧</div>
+                            <div>
+                                <h3 class="text-xl font-bold">Week 6</h3>
+                                <p class="text-sm text-white/90 mt-1">Refinements and assets.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="week7.html" aria-label="Open Week 7" class="group block rounded-2xl p-6 transform transition hover:-translate-y-2 hover:scale-105 text-white shadow-2xl bg-gradient-to-br from-rose-400 to-fuchsia-500">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center text-white text-xl">📐</div>
+                            <div>
+                                <h3 class="text-xl font-bold">Week 7</h3>
+                                <p class="text-sm text-white/90 mt-1">Design handoff and Figma links.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="week8.html" aria-label="Open Week 8" class="group block rounded-2xl p-6 transform transition hover:-translate-y-2 hover:scale-105 text-white shadow-2xl bg-gradient-to-br from-violet-400 to-indigo-600">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center text-white text-xl">🏁</div>
+                            <div>
+                                <h3 class="text-xl font-bold">Week 8</h3>
+                                <p class="text-sm text-white/90 mt-1">Final reflections and conclusion prep.</p>
+                            </div>
+                        </div>
+                    </a>
+                </section>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="bg-white border-t border-slate-200">
+            <div class="max-w-5xl mx-auto px-6 py-4 text-xs text-slate-500">
+                &copy; 2023 Projectdocumentatie | Lost in Tra(i)nslation Achahbar Massine
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,28 @@
+/* Navigation */
+
+.vertical-buttons {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-weight: bold;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    gap: 10px; /* space between buttons */
+}
+
+.vertical-buttons li a {
+    display: block;           /* makes the entire link clickable */
+    padding: 0px 0px;
+    background-color: inherit;
+    color: inherit;
+    text-decoration: none;
+    border-radius: 6px;
+    text-align: left;
+    font-size: 4em;
+}
+
+.vertical-buttons li a:hover {
+    text-decoration: underline;
+}

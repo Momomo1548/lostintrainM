@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+
+  <!-- Your CSS files -->
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/flexboxes.css">
+  <link rel="stylesheet" href="assets/nav.css">
+  <link rel="stylesheet" href="assets/typography.css">
+  <link rel="stylesheet" href="assets/forms.css">
+  <link rel="stylesheet" href="assets/modal.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="title">
+        BP HTML 06 NodeJS
+    </div>
+
+    <div>
+      <ul class="vertical-buttons">
+        <li><a href="index.html">Page 1</a></li>
+        <li><a href="page2.html">Page 2</a></li>
+        <li><a href="page3.html">Page 3</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <h1>Contact</h1>
+ 
+    <!-- Contact Form -->
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <!-- Modal for confirmation -->
+  <div class="modal" id="confirmationModal">
+    <div class="modal-content">
+      <span class="modal-close" id="closeModal">&times;</span>
+      <h2>Thank You!</h2>
+      <p>Your message has been submitted successfully.</p>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('contactForm');
+    const modal = document.getElementById('confirmationModal');
+    const closeModal = document.getElementById('closeModal');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      // Collect form data (optional)
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData.entries());
+      console.log("Form submitted:", data);
+
+      // Show modal
+      modal.classList.add('show');
+
+      // Reset form
+      form.reset();
+    });
+
+    // Close modal on X click
+    closeModal.addEventListener('click', () => {
+      modal.classList.remove('show');
+    });
+
+    // Close modal on clicking outside content
+    window.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.remove('show');
+      }
+    });
+  </script>
+</body>
+</html>

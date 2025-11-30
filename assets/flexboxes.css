@@ -1,0 +1,8 @@
+.two-columns {
+    display: flex;
+    gap: 20px; /* spacing between columns */
+}
+
+.column {
+    flex: 1; /* each column takes equal space */
+}
