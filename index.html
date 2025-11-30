@@ -44,7 +44,7 @@
                 </section>
 
                 <!-- Weeks grid -->
-                <section id="weeks" class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <section id="weeks" class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     <!-- Card template -->
                     <a href="week1.html" aria-label="Open Week 1" class="group block rounded-2xl p-6 transform transition hover:-translate-y-2 hover:scale-105 text-white shadow-2xl bg-gradient-to-br from-rose-400 to-orange-400">
                         <div class="flex items-start gap-4">
@@ -116,15 +116,18 @@
                         </div>
                     </a>
 
-                    <a href="week8.html" aria-label="Open Week 8" class="group block rounded-2xl p-6 transform transition hover:-translate-y-2 hover:scale-105 text-white shadow-2xl bg-gradient-to-br from-violet-400 to-indigo-600">
+                    <div role="link" tabindex="0" aria-label="Open Week 8" onclick="window.location.href='week8.html'" onkeypress="if(event.key==='Enter'){window.location.href='week8.html'}" class="group block rounded-2xl p-6 transform transition hover:-translate-y-2 hover:scale-105 text-white shadow-2xl bg-gradient-to-br from-violet-400 to-indigo-600 cursor-pointer">
                         <div class="flex items-start gap-4">
                             <div class="w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center text-white text-xl">🏁</div>
                             <div>
                                 <h3 class="text-xl font-bold">Week 8</h3>
                                 <p class="text-sm text-white/90 mt-1">Final reflections and conclusion prep.</p>
+                                <div class="mt-3">
+                                    <a href="https://glittery-florentine-427702.netlify.app/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-white/90 text-violet-700 px-3 py-2 rounded-lg shadow-sm hover:shadow-md text-sm">Bekijk iPhone 16 prototype</a>
+                                </div>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </section>
             </div>
         </main>
