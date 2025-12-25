@@ -5,140 +5,175 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lost in Tra(i)nslation - Projectdocumentatie</title>
 
-    <!-- DIT LAADT TAILWIND – heel belangrijk -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .interactive-gradient {
+            transition: background 0.5s ease, transform 0.4s ease;
+        }
+    </style>
 </head>
-
-<body class="min-h-screen bg-gradient-to-br from-rose-50 via-amber-50 to-indigo-50 text-slate-900 antialiased">
+<body class="min-h-screen bg-white text-slate-900 antialiased">
     <div class="min-h-screen flex flex-col">
 
-        <!-- TOPBAR -->
         <header class="py-6">
             <div class="max-w-6xl mx-auto px-6 flex items-center justify-between">
                 <a href="index.html" class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-pink-500 to-violet-500 flex items-center justify-center text-white font-semibold">LT</div>
+                    <div class="w-10 h-10 rounded-lg interactive-gradient bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-500 flex items-center justify-center text-white font-semibold">LT</div>
                     <span class="font-extrabold text-xl text-slate-800">Lost in Tra(i)nslation</span>
                 </a>
-                <nav class="hidden md:flex items-center gap-4">
-                    <a href="resources.html" class="inline-flex items-center gap-2 bg-gradient-to-br from-yellow-400 to-pink-500 text-white px-3 py-2 rounded-lg shadow-md animate-pulse">Procesverhaal</a>
-                    <a href="#weeks" class="inline-flex items-center gap-2 bg-white/90 text-slate-800 px-4 py-2 rounded-lg shadow-sm">Browse Weeks</a>
+                <div class="hidden md:flex items-center gap-6">
+                    <nav class="hidden md:flex items-center gap-4">
+                    <a href="resources.html" class="inline-flex items-center gap-2 interactive-gradient bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-500 text-white px-3 py-2 rounded-lg shadow">Procesverhaal</a>
+                    <a href="#weeks" class="inline-flex items-center gap-2 bg-white text-slate-800 px-4 py-2 rounded-lg shadow-sm">Browse Weeks</a>
                 </nav>
+                    <div class="text-sm text-slate-600">Achahbar Massine • Groep: 1GDM1</div>
+                </div>
             </div>
         </header>
 
-        <!-- NAV is intentionally removed to simplify the top of the site. -->
-
-        <!-- MAIN -->
         <main class="flex-1">
             <div class="max-w-6xl mx-auto px-6 py-12">
-                <!-- Hero -->
-                <section class="bg-gradient-to-br from-pink-500 via-amber-400 to-violet-600 text-white rounded-3xl shadow-2xl p-10 md:p-16">
+
+                <section class="interactive-gradient bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-500 text-white rounded-3xl shadow-xl p-10 md:p-16">
                     <div class="max-w-4xl">
                         <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">Project Documentation — <span class="inline-block bg-white/10 px-2 rounded">Lost in Tra(i)nslation</span></h2>
-                        <p class="mt-4 text-white/90 leading-relaxed text-lg">A colourful, week-by-week account of research, design and prototyping. Click a week to open detailed notes, prototypes and deliverables.</p>
+                        <p class="mt-4 text-white/80 leading-relaxed text-lg">A structured, week-by-week account of research, design and prototyping.</p>
                         <div class="mt-8 flex flex-wrap gap-3">
-                            <a href="#weeks" class="inline-flex items-center gap-2 bg-white text-violet-600 px-5 py-3 rounded-lg shadow hover:shadow-xl transform hover:-translate-y-1">Browse Weeks</a>
-                            <a href="resources.html" class="inline-flex items-center gap-2 bg-gradient-to-br from-yellow-400 to-pink-500 text-white px-5 py-3 rounded-lg shadow-2xl transform hover:scale-105 animate-pulse">Procesverhaal</a>
+                            <a href="#weeks" class="inline-flex items-center gap-2 bg-white text-black px-5 py-3 rounded-lg shadow hover:shadow-xl transform hover:-translate-y-1">Browse Weeks</a>
+                            <a href="resources.html" class="inline-flex items-center gap-2 interactive-gradient bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-500 text-white px-5 py-3 rounded-lg shadow-lg transform hover:scale-105">Procesverhaal</a>
+                            <a href="assets/Design_Documentation.zip" download class="inline-flex items-center gap-2 bg-slate-800 text-white px-5 py-3 rounded-lg shadow-lg">Download volledige ontwerp (ZIP)</a>
                         </div>
                     </div>
                 </section>
 
-                <!-- Weeks grid -->
                 <section id="weeks" class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <!-- Card template -->
-                    <a href="week1.html" aria-label="Open Week 1" class="group block rounded-2xl p-6 transform transition hover:-translate-y-2 hover:scale-105 text-white shadow-2xl bg-gradient-to-br from-rose-400 to-orange-400">
+
+                    <a href="week1.html" class="group block rounded-2xl p-6 hover:-translate-y-2 hover:scale-105 text-white shadow-xl interactive-gradient bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-500">
                         <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center text-white text-xl">🔎</div>
+                            <div class="w-14 h-14 rounded-lg bg-white/10 flex items-center justify-center text-white text-3xl"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" class="w-7 h-7"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 104.5 4.5a7.5 7.5 0 0012.15 12.15z"/></svg></div>
                             <div>
                                 <h3 class="text-xl font-bold">Week 1</h3>
-                                <p class="text-sm text-white/90 mt-1">Process and initial research.</p>
+                                <p class="text-sm text-white/70 mt-1">Process and initial research.</p>
                             </div>
                         </div>
                     </a>
 
-                    <a href="week2.html" aria-label="Open Week 2" class="group block rounded-2xl p-6 transform transition hover:-translate-y-2 hover:scale-105 text-white shadow-2xl bg-gradient-to-br from-emerald-400 to-teal-400">
+                    <a href="week2.html" class="group block rounded-2xl p-6 hover:-translate-y-2 hover:scale-105 text-white shadow-xl interactive-gradient bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-500">
                         <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center text-white text-xl">🎨</div>
+                            <div class="w-14 h-14 rounded-lg bg-white/10 flex items-center justify-center text-white text-3xl"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" class="w-7 h-7"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3a9 9 0 100 18 4 4 0 014-4h1a3 3 0 000-6h-1a1 1 0 01-1-1 4 4 0 00-4-4z"/></svg></div>
                             <div>
                                 <h3 class="text-xl font-bold">Week 2</h3>
-                                <p class="text-sm text-white/90 mt-1">Design explorations and Figma resources.</p>
+                                <p class="text-sm text-white/70 mt-1">Design explorations and Figma resources.</p>
                             </div>
                         </div>
                     </a>
 
-                    <a href="week3.html" aria-label="Open Week 3" class="group block rounded-2xl p-6 transform transition hover:-translate-y-2 hover:scale-105 text-white shadow-2xl bg-gradient-to-br from-indigo-500 to-violet-500">
+                    <a href="week3.html" class="group block rounded-2xl p-6 hover:-translate-y-2 hover:scale-105 text-white shadow-xl interactive-gradient bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-500">
                         <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center text-white text-xl">🧠</div>
+                            <div class="w-14 h-14 rounded-lg bg-white/10 flex items-center justify-center text-white text-3xl"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" class="w-7 h-7"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8a3 3 0 116 0v8a3 3 0 11-6 0V8zm6 0a3 3 0 116 0v8a3 3 0 11-6 0V8z"/></svg></div>
                             <div>
                                 <h3 class="text-xl font-bold">Week 3</h3>
-                                <p class="text-sm text-white/90 mt-1">Research notes and outputs.</p>
+                                <p class="text-sm text-white/70 mt-1">Research notes and outputs.</p>
                             </div>
                         </div>
                     </a>
 
-                    <a href="week4.html" aria-label="Open Week 4" class="group block rounded-2xl p-6 transform transition hover:-translate-y-2 hover:scale-105 text-white shadow-2xl bg-gradient-to-br from-yellow-400 to-amber-500">
+                    <a href="week4.html" class="group block rounded-2xl p-6 hover:-translate-y-2 hover:scale-105 text-white shadow-xl interactive-gradient bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-500">
                         <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center text-white text-xl">⚙️</div>
+                            <div class="w-14 h-14 rounded-lg bg-white/10 flex items-center justify-center text-white text-3xl"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" class="w-7 h-7"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15a3 3 0 100-6 3 3 0 000 6zm8.94-2a7.97 7.97 0 00.11-2 7.97 7.97 0 00-.11-2l2.12-1.65a.5.5 0 00.12-.64l-2-3.46a.5.5 0 00-.61-.22l-2.49 1a8.12 8.12 0 00-3.46-2l-.38-2.65A.5.5 0 0013 1h-4a.5.5 0 00-.5.42L8.12 4.07a8.12 8.12 0 00-3.46 2l-2.49-1a.5.5 0 00-.61.22l-2 3.46a.5.5 0 00.12.64L2.8 9a7.97 7.97 0 000 4l-2.12 1.65a.5.5 0 00-.12.64l2 3.46c.14.24.44.34.61.22l2.49-1a8.12 8.12 0 003.46 2l.38 2.65A.5.5 0 009 23h4a.5.5 0 00.5-.42l.38-2.65a8.12 8.12 0 003.46-2l2.49 1c.17.12.47.02.61-.22l2-3.46a.5.5 0 00-.12-.64L20.94 13z"/></svg></div>
                             <div>
                                 <h3 class="text-xl font-bold">Week 4</h3>
-                                <p class="text-sm text-white/90 mt-1">Prototyping and iterations.</p>
+                                <p class="text-sm text-white/70 mt-1">Prototyping and iterations.</p>
                             </div>
                         </div>
                     </a>
 
-                    <a href="week5.html" aria-label="Open Week 5" class="group block rounded-2xl p-6 transform transition hover:-translate-y-2 hover:scale-105 text-white shadow-2xl bg-gradient-to-br from-pink-400 to-rose-500">
+                    <a href="week5.html" class="group block rounded-2xl p-6 hover:-translate-y-2 hover:scale-105 text-white shadow-xl interactive-gradient bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-500">
                         <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center text-white text-xl">🧪</div>
+                            <div class="w-14 h-14 rounded-lg bg-white/10 flex items-center justify-center text-white text-3xl"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" class="w-7 h-7"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 2h12M9 2v6l-5 9a4 4 0 004 6h8a4 4 0 004-6l-5-9V2"/></svg></div>
                             <div>
                                 <h3 class="text-xl font-bold">Week 5</h3>
-                                <p class="text-sm text-white/90 mt-1">User testing and feedback.</p>
+                                <p class="text-sm text-white/70 mt-1">User testing and feedback.</p>
                             </div>
                         </div>
                     </a>
 
-                    <a href="week6.html" aria-label="Open Week 6" class="group block rounded-2xl p-6 transform transition hover:-translate-y-2 hover:scale-105 text-white shadow-2xl bg-gradient-to-br from-sky-400 to-indigo-400">
+                    <a href="week6.html" class="group block rounded-2xl p-6 hover:-translate-y-2 hover:scale-105 text-white shadow-xl interactive-gradient bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-500">
                         <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center text-white text-xl">🔧</div>
+                            <div class="w-14 h-14 rounded-lg bg-white/10 flex items-center justify-center text-white text-3xl"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" class="w-7 h-7"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21l6-6m0 0a9 9 0 1112-12 9 9 0 01-12 12zm0 0l6 6"/></svg></div>
                             <div>
                                 <h3 class="text-xl font-bold">Week 6</h3>
-                                <p class="text-sm text-white/90 mt-1">Refinements and assets.</p>
+                                <p class="text-sm text-white/70 mt-1">Refinements and assets.</p>
                             </div>
                         </div>
                     </a>
 
-                    <a href="week7.html" aria-label="Open Week 7" class="group block rounded-2xl p-6 transform transition hover:-translate-y-2 hover:scale-105 text-white shadow-2xl bg-gradient-to-br from-rose-400 to-fuchsia-500">
+                    <a href="week7.html" class="group block rounded-2xl p-6 hover:-translate-y-2 hover:scale-105 text-white shadow-xl interactive-gradient bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-500">
                         <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center text-white text-xl">📐</div>
+                            <div class="w-14 h-14 rounded-lg bg-white/10 flex items-center justify-center text-white text-3xl"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" class="w-7 h-7"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3v18h18M3 21L21 3"/></svg></div>
                             <div>
                                 <h3 class="text-xl font-bold">Week 7</h3>
-                                <p class="text-sm text-white/90 mt-1">Design handoff and Figma links.</p>
+                                <p class="text-sm text-white/70 mt-1">Design handoff and Figma links.</p>
                             </div>
                         </div>
                     </a>
 
-                    <div role="link" tabindex="0" aria-label="Open Week 8" onclick="window.location.href='week8.html'" onkeypress="if(event.key==='Enter'){window.location.href='week8.html'}" class="group block rounded-2xl p-6 transform transition hover:-translate-y-2 hover:scale-105 text-white shadow-2xl bg-gradient-to-br from-violet-400 to-indigo-600 cursor-pointer">
+                    <div role="link" tabindex="0" onclick="window.location.href='week8.html'" class="group block rounded-2xl p-6 hover:-translate-y-2 hover:scale-105 text-white shadow-xl interactive-gradient bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-500 cursor-pointer">
                         <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center text-white text-xl">🏁</div>
+                            <div class="w-14 h-14 rounded-lg bg-white/10 flex items-center justify-center text-white text-3xl"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white" class="w-7 h-7"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 3v18m0-16h12l-2 4 2 4H4"/></svg></div>
                             <div>
                                 <h3 class="text-xl font-bold">Week 8</h3>
-                                <p class="text-sm text-white/90 mt-1">Final reflections and conclusion prep.</p>
+                                <p class="text-sm text-white/70 mt-1">Final reflections and conclusion prep.</p>
                                 <div class="mt-3">
-                                    <a href="https://glittery-florentine-427702.netlify.app/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-white/90 text-violet-700 px-3 py-2 rounded-lg shadow-sm hover:shadow-md text-sm">Bekijk iPhone 16 prototype</a>
+                                    <a href="https://glittery-florentine-427702.netlify.app/" target="_blank" class="inline-flex items-center gap-2 bg-white text-black px-3 py-2 rounded-lg shadow-sm text-sm">Bekijk iPhone 16 prototype</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </section>
             </div>
+
+            <!-- Gradient color slider -->
+            <div class="max-w-6xl mx-auto px-6 py-6 flex items-center gap-4">
+            <label for="gradientHue" class="text-slate-800 font-medium">Gradient:</label>
+            <input type="range" id="gradientHue" min="0" max="360" value="270" class="w-full">
+            </div>
+
         </main>
 
-        <!-- FOOTER -->
         <footer class="bg-white border-t border-slate-200">
-            <div class="max-w-5xl mx-auto px-6 py-4 text-xs text-slate-500">
-                &copy; 2023 Projectdocumentatie | Lost in Tra(i)nslation Achahbar Massine
+            <div class="max-w-5xl mx-auto px-6 py-4 text-xs text-slate-500 flex items-center justify-between">
+                <div>&copy; 2023 Projectdocumentatie | Lost in Tra(i)nslation Achahbar Massine</div>
+                <div><a href="https://github.com/Momomo1548/lostintrainM" class="flex items-center gap-2 text-sky-600" target="_blank" rel="noopener" aria-label="GitHub repository"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="text-slate-800"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.333-1.754-1.333-1.754-1.09-.744.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.418-1.305.762-1.605-2.665-.3-5.467-1.334-5.467-5.93 0-1.31.468-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297 24 5.67 18.627.297 12 .297z"/></svg><span class="underline font-semibold">GITHUB</span></a></div>
             </div>
         </footer>
     </div>
+
+    <script>
+        const cards = document.querySelectorAll('.interactive-gradient');
+        const slider = document.getElementById('gradientHue');
+        let hue = parseInt(slider.value);
+
+        slider.addEventListener('input', (e) => {
+            hue = parseInt(e.target.value);
+            cards.forEach(card => {
+                card.style.background = `linear-gradient(135deg, hsl(${hue}, 80%, 60%), hsl(${(hue+60)%360}, 70%, 55%), hsl(${(hue+120)%360}, 70%, 50%))`;
+            });
+        });
+
+        cards.forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = ((e.clientX - rect.left) / rect.width) * 100;
+                const y = ((e.clientY - rect.top) / rect.height) * 100;
+                card.style.background = `radial-gradient(circle at ${x}% ${y}%, rgba(255,255,255,0.25), rgba(0,0,0,0.7)), linear-gradient(135deg, hsl(${hue}, 80%, 60%), hsl(${(hue+60)%360}, 70%, 55%), hsl(${(hue+120)%360}, 70%, 50%))`;
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.background = `linear-gradient(135deg, hsl(${hue}, 80%, 60%), hsl(${(hue+60)%360}, 70%, 55%), hsl(${(hue+120)%360}, 70%, 50%))`;
+            });
+        });
+        </script>
+
 </body>
 </html>
-
